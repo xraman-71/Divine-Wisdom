@@ -1,4 +1,4 @@
-# 🕉️ Divine Wisdom: Daily Hindu Scriptures & Spiritual Insights
+#   <img src="https://i.postimg.cc/k5McRz7f/icon128.png" width="72" alt="Divine Wisdom Icon" /><br><br> Divine Wisdom: Daily Hindu Scriptures & Spiritual Insights
 
 > Transform your browser with daily verses from the Bhagavad Gita, Puranas, and Vedas. One sacred verse per session — appearing gently, then fading away.
 
@@ -232,7 +232,7 @@ If this extension brings peace to your day, consider supporting future projects:
 ---
 
 <p align="center">
-  <img src="icon128.png" width="72" alt="Divine Wisdom Icon" /><br><br>
+  <img src="https://i.postimg.cc/k5McRz7f/icon128.png" width="72" alt="Divine Wisdom Icon" /><br><br>
   <i>"One who sees inaction in action, and action in inaction, is intelligent among men."</i><br>
   <b>— Bhagavad Gita</b><br><br>
   Made with 🕉️ and devotion
