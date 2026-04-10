@@ -1,37 +1,1108 @@
-<p><strong>Privacy Policy</strong></p>
-<p><em><em>Divine Wisdom: Daily Hindu Scriptures &amp; Spiritual Insights</em></em></p>
-<p>Effective Date: April 10, 2026</p>
-<h2><strong><strong>1. Introduction</strong></strong></h2>
-<p>This Privacy Policy explains how the Chrome extension "Divine Wisdom: Daily Hindu Scriptures &amp; Spiritual Insights" (the "Extension") handles your information. We are committed to being transparent about our practices. Please read this policy carefully to understand what data we collect, why we collect it, and how it is used.</p>
-<h2><strong><strong>2. Who We Are</strong></strong></h2>
-<p>This Extension is an independent Chrome extension that delivers daily verses and spiritual insights from Hindu scriptures such as the Bhagavad Gita, Puranas, and Vedas. We are not affiliated with Google or any religious organization.</p>
-<h2><strong><strong>3. What Information We Collect</strong></strong></h2>
-<p>We want to be clear: this Extension does not collect, transmit, or share any personally identifiable information about you.</p>
-<p>The Extension uses the following browser permissions:</p>
-<p>Storage Permission: We use Chrome's built-in storage feature to save your personal preferences locally on your device. This includes things like your favorite verses, display settings, or notification preferences. This data stays on your device only and is never sent to any server.</p>
-<p>Tabs and Active Tab Permissions: The Extension uses these permissions to display spiritual content overlays or popups when you open a new tab or interact with the Extension. We do not read, record, monitor, or transmit any information about the websites you visit or your browsing activity.</p>
-<h2><strong><strong>4. What We Do Not Collect</strong></strong></h2>
-<p>We do not collect your name, email address, or any contact information.</p>
-<p>We do not collect your browsing history or the URLs of pages you visit.</p>
-<p>We do not collect your location, device identifiers, or IP address.</p>
-<p>We do not collect financial information or payment data.</p>
-<p>We do not use cookies or any third-party tracking technologies.</p>
-<p>We do not share any data with third parties, advertisers, or analytics services.</p>
-<h2><strong><strong>5. How We Use Local Storage</strong></strong></h2>
-<p>The Extension stores your preferences and saved content directly on your device using Chrome's local storage API. This data is used only to remember your settings between sessions so you have a consistent experience. You can clear this data at any time by removing the Extension from Chrome or clearing your browser's extension storage through Chrome settings.</p>
-<h2><strong><strong>6. Content Scripts</strong></strong></h2>
-<p>The Extension includes a content script that runs on web pages you visit. This script is used solely to display spiritual content or UI elements as part of the Extension's features. The content script does not read, copy, record, or transmit any content from the websites you visit or any personal information entered on those pages.</p>
-<h2><strong><strong>7. No Data Sharing</strong></strong></h2>
-<p>We do not sell, trade, rent, or share any data with any third parties. Since we do not collect personal data in the first place, there is nothing to share.</p>
-<h2><strong><strong>8. Children's Privacy</strong></strong></h2>
-<p>This Extension is suitable for all ages. We do not knowingly collect any personal information from children under the age of 13. If you believe a child has provided personal information through the Extension, please contact us and we will take appropriate steps.</p>
-<h2><strong><strong>9. Security</strong></strong></h2>
-<p>Since all data stays on your local device and no information is transmitted to external servers, the security risks associated with data collection do not apply to this Extension. We rely on Chrome's built-in security for local storage.</p>
-<h2><strong><strong>10. Changes to This Privacy Policy</strong></strong></h2>
-<p>We may update this Privacy Policy from time to time. If we make any changes, we will update the effective date at the top of this document. We encourage you to review this policy periodically. Continued use of the Extension after any changes means you accept the updated policy.</p>
-<h2><strong><strong>11. Your Rights</strong></strong></h2>
-<p>Because we do not collect personal data, there is no personal information for us to provide, correct, or delete on request. If you wish to remove all locally stored data related to this Extension, you can do so by uninstalling the Extension from Chrome or clearing its local data through Chrome's settings under Extensions.</p>
-<h2><strong><strong>12. Contact Us</strong></strong></h2>
-<p>If you have any questions, concerns, or feedback about this Privacy Policy or the Extension, please feel free to reach out to us through the Chrome Web Store listing page for this Extension. We are happy to address any questions you may have.</p>
-<p><em><em>This privacy policy is provided in plain English and is intended to be clear and easy to understand. We are committed to your privacy and to delivering a safe, trustworthy spiritual experience.</em></em></p>
-<!-- Comments are visible in the HTML source only -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Divine Wisdom Chrome Extension</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #ff9933;
+    --saffron-deep: #e67e22;
+    --saffron-dark: #d35400;
+    --gold: #d4af37;
+    --gold-light: #f0d060;
+    --gold-pale: #fef5e7;
+    --amber-deep: #4a2c00;
+    --amber-mid: #8b4513;
+    --cream: #fffbf5;
+    --cream-dark: #fff3e0;
+    --text-dark: #2c1a00;
+    --text-mid: #6b3a00;
+    --text-muted: #a0612a;
+    --shadow-warm: rgba(255,153,51,0.22);
+    --shadow-gold: rgba(212,175,55,0.18);
+    --gradient-fire: linear-gradient(135deg, #ffd700 0%, #ff9933 50%, #ff4500 100%);
+    --gradient-saffron: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+
+  /* Grain texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.5;
+  }
+
+  /* Particles */
+  .particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .particle { position: absolute; border-radius: 50%; animation: floatUp linear infinite; opacity: 0; }
+  @keyframes floatUp {
+    0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.8; }
+    90%  { opacity: 0.4; }
+    100% { transform: translateY(-100px) rotate(540deg); opacity: 0; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 200;
+    padding: 14px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,251,245,0.88);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,153,51,0.12);
+    animation: fadeIn 0.6s ease both;
+  }
+  .nav-logo {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--amber-deep);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-logo .om { font-size: 22px; }
+  .nav-tag {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--gold-pale);
+    color: var(--saffron-deep);
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid rgba(255,153,51,0.2);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    padding: 140px 24px 80px;
+    text-align: center;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,153,51,0.15) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 30% at 90% 90%, rgba(212,175,55,0.1) 0%, transparent 60%),
+      var(--cream);
+    overflow: visible;
+  }
+  .hero-om {
+    font-size: clamp(56px, 10vw, 96px);
+    line-height: 1.3;
+    padding-top: 10px;
+    display: block;
+    margin-bottom: 18px;
+    background: var(--gradient-fire);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 30px rgba(255,153,51,0.45));
+    animation: omPulse 3.5s ease-in-out infinite, fadeInDown 0.9s ease both;
+    position: relative;
+    z-index: 1;
+  }
+  @keyframes omPulse {
+    0%,100% { filter: drop-shadow(0 0 24px rgba(255,153,51,0.4)); transform: scale(1); }
+    50%      { filter: drop-shadow(0 0 52px rgba(255,153,51,0.75)); transform: scale(1.03); }
+  }
+  .hero-eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 14px;
+    animation: fadeInUp 0.8s 0.1s ease both;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 5.5vw, 60px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    background: var(--gradient-fire);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 0.8s 0.2s ease both;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(14px, 1.8vw, 17px);
+    font-weight: 300;
+    color: var(--text-mid);
+    max-width: 580px;
+    margin: 0 auto 32px;
+    line-height: 1.8;
+    animation: fadeInUp 0.8s 0.3s ease both;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    animation: fadeInUp 0.8s 0.4s ease both;
+    position: relative;
+    z-index: 1;
+  }
+  .meta-pill {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 100px;
+    border: 1px solid rgba(255,153,51,0.25);
+    background: rgba(255,255,255,0.8);
+    color: var(--text-muted);
+    letter-spacing: 0.3px;
+  }
+  .meta-pill strong { color: var(--saffron-deep); font-weight: 600; }
+
+  .hero-divider {
+    width: 80px;
+    height: 2px;
+    background: var(--gradient-fire);
+    border-radius: 2px;
+    margin: 36px auto 0;
+    animation: fadeInUp 0.8s 0.5s ease both;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── LAYOUT ── */
+  .page-wrap {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+    position: relative;
+    z-index: 1;
+    align-items: start;
+  }
+
+  /* ── STICKY SIDEBAR TOC ── */
+  .toc-sidebar {
+    position: sticky;
+    top: 80px;
+    padding-right: 40px;
+    align-self: start;
+  }
+  .toc-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .toc-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255,153,51,0.3), transparent);
+  }
+  .toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+  .toc-list a {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 8px;
+    display: block;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+  }
+  .toc-list a:hover,
+  .toc-list a.active {
+    color: var(--saffron-deep);
+    background: rgba(255,153,51,0.07);
+    border-left-color: var(--saffron);
+    padding-left: 16px;
+  }
+  .toc-num {
+    font-size: 10px;
+    color: rgba(160,97,42,0.5);
+    margin-right: 4px;
+    font-family: 'Cinzel', serif;
+  }
+
+  /* ── CONTENT ── */
+  .content { min-width: 0; }
+
+  /* Section */
+  .pp-section {
+    margin-bottom: 64px;
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .pp-section.visible { opacity: 1; transform: translateY(0); }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255,153,51,0.15);
+  }
+  .section-num {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    background: var(--gradient-saffron);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px var(--shadow-warm);
+    margin-top: 4px;
+  }
+  .section-title-wrap {}
+  .section-eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: 700;
+    color: var(--amber-deep);
+    line-height: 1.2;
+  }
+
+  .section-body {
+    font-size: 14.5px;
+    color: var(--text-mid);
+    line-height: 1.85;
+  }
+  .section-body p { margin-bottom: 16px; }
+  .section-body p:last-child { margin-bottom: 0; }
+  .section-body strong { color: var(--amber-deep); font-weight: 600; }
+  .section-body em { color: var(--saffron-deep); font-style: normal; font-weight: 500; }
+
+  /* Info box */
+  .info-box {
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(255,153,51,0.18);
+    border-left: 4px solid var(--saffron);
+    border-radius: 0 12px 12px 0;
+    padding: 18px 22px;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    box-shadow: 0 2px 16px var(--shadow-warm);
+  }
+  .info-box.green  { border-left-color: #4caf50; }
+  .info-box.gold   { border-left-color: var(--gold); background: rgba(254,245,231,0.8); }
+
+  /* Check list */
+  .check-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 18px 0; }
+  .check-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 14px;
+    color: var(--text-mid);
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    border: 1px solid rgba(255,153,51,0.1);
+    line-height: 1.6;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .check-list li:hover { background: var(--gold-pale); transform: translateX(4px); }
+  .check-list .ico { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .check-list .txt strong { display: block; font-size: 13px; color: var(--amber-deep); font-weight: 600; margin-bottom: 2px; }
+  .check-list .txt span  { font-size: 12.5px; color: var(--text-muted); }
+
+  /* Perm table */
+  .perm-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 20px 0;
+  }
+  .perm-table th {
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 0 16px 8px;
+    text-align: left;
+  }
+  .perm-table td {
+    background: rgba(255,255,255,0.9);
+    padding: 14px 16px;
+    font-size: 13.5px;
+    color: var(--text-mid);
+    border-top: 1px solid rgba(255,153,51,0.1);
+    border-bottom: 1px solid rgba(255,153,51,0.1);
+    vertical-align: top;
+    line-height: 1.6;
+    transition: background 0.2s;
+  }
+  .perm-table tr:hover td { background: var(--gold-pale); }
+  .perm-table td:first-child {
+    border-left: 1px solid rgba(255,153,51,0.1);
+    border-radius: 10px 0 0 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--saffron-deep);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .perm-table td:last-child {
+    border-right: 1px solid rgba(255,153,51,0.1);
+    border-radius: 0 10px 10px 0;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* Highlight card */
+  .highlight-card {
+    background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(212,175,55,0.08));
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 24px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .highlight-card::after {
+    content: 'ॐ';
+    position: absolute;
+    bottom: -10px;
+    right: 14px;
+    font-size: 80px;
+    color: rgba(255,153,51,0.07);
+    pointer-events: none;
+    line-height: 1;
+  }
+  .highlight-card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--amber-deep);
+    margin-bottom: 10px;
+  }
+  .highlight-card p {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.75;
+  }
+
+  /* Divider */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,153,51,0.2), transparent);
+    margin: 12px 0 64px;
+  }
+
+  /* ── SUMMARY BANNER ── */
+  .summary-banner {
+    background: var(--amber-deep);
+    border-radius: 20px;
+    padding: 40px 36px;
+    margin: 0 0 64px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .summary-banner.visible { opacity: 1; transform: translateY(0); }
+  .summary-banner::before {
+    content: 'ॐ';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 180px;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .summary-banner h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 20px;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+  }
+  .summary-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .summary-item .si { font-size: 18px; flex-shrink: 0; }
+
+  /* ── CONTACT ── */
+  .contact-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(254,245,231,0.9));
+    border: 1px solid rgba(212,175,55,0.25);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .contact-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px var(--shadow-warm); }
+  .contact-icon { font-size: 40px; flex-shrink: 0; }
+  .contact-title {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--amber-deep);
+    margin-bottom: 6px;
+  }
+  .contact-text { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+  .contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: var(--gradient-saffron);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px var(--shadow-warm);
+  }
+  .contact-link:hover { transform: translateY(-2px); box-shadow: 0 8px 22px var(--shadow-warm); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--amber-deep);
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 56px 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  footer::before {
+    content: 'ॐ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 280px;
+    color: rgba(255,255,255,0.025);
+    pointer-events: none;
+    line-height: 1;
+  }
+  .footer-om {
+    display: block;
+    font-size: 44px;
+    background: var(--gradient-fire);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    animation: omPulse 3s ease-in-out infinite;
+  }
+  .footer-title {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 6px;
+  }
+  .footer-sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    opacity: 0.55;
+    margin-bottom: 24px;
+  }
+  .footer-note {
+    font-size: 12px;
+    opacity: 0.5;
+    font-family: 'Outfit', sans-serif;
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .footer-support {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 11px 26px;
+    background: var(--gradient-fire);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 0 6px 22px rgba(255,153,51,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .footer-support:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,153,51,0.55); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeIn    { from { opacity:0 } to { opacity:1 } }
+  @keyframes fadeInUp  { from { opacity:0; transform:translateY(20px) } to { opacity:1; transform:none } }
+  @keyframes fadeInDown{ from { opacity:0; transform:translateY(-16px) } to { opacity:1; transform:none } }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .page-wrap { grid-template-columns: 1fr; }
+    .toc-sidebar { display: none; }
+    nav { padding: 12px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+
+<!-- Nav -->
+<nav>
+  <a class="nav-logo" href="#"><span class="om">🕉️</span> Divine Wisdom</a>
+  <span class="nav-tag">Privacy Policy</span>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <span class="hero-om">ॐ</span>
+  <div class="hero-eyebrow">Legal &amp; Transparency Document</div>
+  <h1 class="hero-title">Privacy Policy</h1>
+  <p class="hero-sub">We believe privacy is sacred. This document explains in full detail what data we handle, how we handle it, and — most importantly — what we never do.</p>
+  <div class="hero-meta">
+    <span class="meta-pill"><strong>Effective:</strong> April 10, 2026</span>
+    <span class="meta-pill"><strong>Version:</strong> 1.0</span>
+    <span class="meta-pill"><strong>Extension:</strong> Divine Wisdom</span>
+    <span class="meta-pill"><strong>Platform:</strong> Chrome (Manifest v3)</span>
+  </div>
+  <div class="hero-divider"></div>
+</section>
+
+<!-- Page body -->
+<div class="page-wrap">
+
+  <!-- Sidebar TOC -->
+  <aside class="toc-sidebar">
+    <div class="toc-label">Contents</div>
+    <ul class="toc-list">
+      <li><a href="#s1"><span class="toc-num">01</span>Introduction</a></li>
+      <li><a href="#s2"><span class="toc-num">02</span>Who We Are</a></li>
+      <li><a href="#s3"><span class="toc-num">03</span>Information We Collect</a></li>
+      <li><a href="#s4"><span class="toc-num">04</span>What We Do Not Collect</a></li>
+      <li><a href="#s5"><span class="toc-num">05</span>Local Storage Use</a></li>
+      <li><a href="#s6"><span class="toc-num">06</span>Permissions Explained</a></li>
+      <li><a href="#s7"><span class="toc-num">07</span>Content Scripts</a></li>
+      <li><a href="#s8"><span class="toc-num">08</span>Third-Party Services</a></li>
+      <li><a href="#s9"><span class="toc-num">09</span>Data Sharing</a></li>
+      <li><a href="#s10"><span class="toc-num">10</span>Data Retention</a></li>
+      <li><a href="#s11"><span class="toc-num">11</span>Children's Privacy</a></li>
+      <li><a href="#s12"><span class="toc-num">12</span>Security</a></li>
+      <li><a href="#s13"><span class="toc-num">13</span>Your Rights</a></li>
+      <li><a href="#s14"><span class="toc-num">14</span>Policy Updates</a></li>
+      <li><a href="#s15"><span class="toc-num">15</span>Compliance</a></li>
+      <li><a href="#s16"><span class="toc-num">16</span>Contact Us</a></li>
+    </ul>
+  </aside>
+
+  <!-- Content -->
+  <main class="content">
+
+    <!-- Summary Banner -->
+    <div class="summary-banner" id="summary">
+      <h3>🛡️ Privacy at a Glance</h3>
+      <div class="summary-grid">
+        <div class="summary-item"><span class="si">✅</span>No personal data collected</div>
+        <div class="summary-item"><span class="si">✅</span>No browsing history accessed</div>
+        <div class="summary-item"><span class="si">✅</span>No external servers or APIs</div>
+        <div class="summary-item"><span class="si">✅</span>No cookies or trackers</div>
+        <div class="summary-item"><span class="si">✅</span>No data sold or shared</div>
+        <div class="summary-item"><span class="si">✅</span>All storage is local only</div>
+        <div class="summary-item"><span class="si">✅</span>Content scripts are read-only</div>
+        <div class="summary-item"><span class="si">✅</span>Safe for all ages</div>
+      </div>
+    </div>
+
+    <!-- 1. Introduction -->
+    <div class="pp-section" id="s1">
+      <div class="section-header">
+        <div class="section-num">01</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Overview</div>
+          <h2 class="section-title">Introduction</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>This Privacy Policy describes how the Chrome browser extension <strong>"Divine Wisdom: Daily Hindu Scriptures &amp; Spiritual Insights"</strong> (hereinafter referred to as "the Extension," "we," "us," or "our") handles information in connection with your use of the Extension.</p>
+        <p>We are committed to full transparency and to upholding the highest standards of user privacy. This document has been written in plain English so that anyone — regardless of technical background — can understand exactly how the Extension operates in relation to their personal data.</p>
+        <p>By installing and using the Extension, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with any part of this policy, you may uninstall the Extension at any time through your Chrome browser's extension management page.</p>
+        <div class="info-box gold">
+          <strong>Plain English Summary:</strong> This Extension shows you one spiritual verse from Hindu scriptures when you open your browser. It does not watch you, track you, or send anything about you anywhere. It simply works locally on your device.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Who We Are -->
+    <div class="pp-section" id="s2">
+      <div class="section-header">
+        <div class="section-num">02</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Identity</div>
+          <h2 class="section-title">Who We Are</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Divine Wisdom is an independent Chrome extension created by an individual developer. The Extension is not affiliated with, endorsed by, or connected to Google LLC, the Chrome Web Store organisation, or any religious institution.</p>
+        <p>The Extension is a personal creative and spiritual project, built to make ancient Hindu wisdom accessible to modern browser users in a non-intrusive, focused way. We have no commercial data interests and derive no benefit from your personal information.</p>
+        <p>For support or inquiries, you may reach us through the Chrome Web Store listing page or the contact information provided in Section 16 of this document.</p>
+      </div>
+    </div>
+
+    <!-- 3. Information We Collect -->
+    <div class="pp-section" id="s3">
+      <div class="section-header">
+        <div class="section-num">03</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Data Handling</div>
+          <h2 class="section-title">Information We Collect</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension collects a minimal, strictly functional piece of data — and only locally on your device. Specifically:</p>
+
+        <ul class="check-list">
+          <li>
+            <span class="ico">💾</span>
+            <div class="txt">
+              <strong>Session State Flag</strong>
+              <span>A single boolean value (<code style="background:#f5e6d3;padding:1px 6px;border-radius:4px;font-size:12px;">showMessage: true/false</code>) stored in Chrome's <code style="background:#f5e6d3;padding:1px 6px;border-radius:4px;font-size:12px;">chrome.storage.session</code> API. This flag records only whether a verse has been shown in the current browser session. It is reset every time you restart your browser and is never transmitted outside your device.</span>
+            </div>
+          </li>
+          <li>
+            <span class="ico">⚙️</span>
+            <div class="txt">
+              <strong>User Preferences (Optional)</strong>
+              <span>If applicable, display preferences such as theme or notification settings may be stored locally using <code style="background:#f5e6d3;padding:1px 6px;border-radius:4px;font-size:12px;">chrome.storage.local</code>. These remain on your device at all times and are never synced or transmitted.</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-box">
+          <strong>Important:</strong> Neither of these data points is personal information. No name, email, identity, location, or behavioural data is involved at any stage. The session flag is equivalent to a temporary on/off switch that resets automatically.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. What We Do NOT Collect -->
+    <div class="pp-section" id="s4">
+      <div class="section-header">
+        <div class="section-num">04</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Explicit Exclusions</div>
+          <h2 class="section-title">What We Do Not Collect</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The following categories of data are <strong>never collected, accessed, stored, or processed</strong> by this Extension under any circumstance:</p>
+        <ul class="check-list">
+          <li><span class="ico">🚫</span><div class="txt"><strong>Personal Identifiers</strong><span>Name, username, email address, phone number, or any identifier that could be linked to a specific individual.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Browsing History</strong><span>The URLs of pages you visit, search queries, or any record of your browsing behaviour.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Location Data</strong><span>Your physical location, IP address, GPS coordinates, or any geographic information.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Device Information</strong><span>Device identifiers, hardware fingerprints, operating system details, or browser fingerprinting data.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Financial Information</strong><span>Payment details, credit card numbers, bank account information, or any financial data of any kind.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Authentication Data</strong><span>Passwords, login credentials, tokens, or any authentication information entered on websites you visit.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Web Page Content</strong><span>Text, images, form inputs, or any content present on pages you browse.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Usage Analytics</strong><span>How often you use the Extension, which features you interact with, or any behavioural analytics.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Communications</strong><span>Emails, messages, chat content, or any private communications you send or receive.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Health or Sensitive Data</strong><span>Health information, biometric data, racial or ethnic origin, political opinions, or religious beliefs.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 5. Local Storage -->
+    <div class="pp-section" id="s5">
+      <div class="section-header">
+        <div class="section-num">05</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">On-Device Storage</div>
+          <h2 class="section-title">How We Use Local Storage</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension makes use of two Chrome storage APIs — both of which store data exclusively on your device:</p>
+        <div class="highlight-card">
+          <div class="highlight-card-title">chrome.storage.session</div>
+          <p>Used to store a single flag (<em>showMessage</em>) that determines whether the spiritual verse overlay has already been shown in the current browser session. This data is automatically cleared when you close and restart your browser. It is never transmitted, never synced to Google's servers via Chrome Sync, and never accessible to any external party.</p>
+        </div>
+        <div class="highlight-card" style="margin-top:14px;">
+          <div class="highlight-card-title">chrome.storage.local</div>
+          <p>May be used to remember your display preferences between sessions. Like session storage, this data remains on your device only, is not included in Chrome's sync mechanism, and cannot be accessed by any website or third party.</p>
+        </div>
+        <p style="margin-top:18px;">You can remove all locally stored data at any time by uninstalling the Extension or by visiting <code style="background:#f5e6d3;padding:2px 8px;border-radius:4px;font-size:12px;">chrome://extensions/</code>, clicking "Details" on the Extension, and selecting "Clear Data."</p>
+      </div>
+    </div>
+
+    <!-- 6. Permissions -->
+    <div class="pp-section" id="s6">
+      <div class="section-header">
+        <div class="section-num">06</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Manifest v3 Permissions</div>
+          <h2 class="section-title">Permissions Explained</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension requests the following permissions, each of which serves a specific, limited, and non-invasive purpose. No permission is used beyond its stated function.</p>
+        <table class="perm-table">
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Why It Is Required</th>
+              <th>What It Cannot Do</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>storage</td>
+              <td>Stores the session gate flag and user preferences locally on your device. Used by <code style="font-size:11px;background:#f5e6d3;padding:1px 5px;border-radius:3px;">chrome.storage.session</code> and <code style="font-size:11px;background:#f5e6d3;padding:1px 5px;border-radius:3px;">chrome.storage.local</code>.</td>
+              <td>Cannot access any other extension's storage or your Chrome sync data.</td>
+            </tr>
+            <tr>
+              <td>tabs</td>
+              <td>Required for the content script to run and inject the verse overlay into browser tabs when the session gate allows it.</td>
+              <td>Cannot read URLs, tab titles, or any content of the pages you visit.</td>
+            </tr>
+            <tr>
+              <td>activeTab</td>
+              <td>Enables the extension popup to appear when you click the Divine Wisdom icon in the Chrome toolbar.</td>
+              <td>Cannot access any tab other than the one you explicitly interact with by clicking the icon.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box green" style="margin-top:4px;">
+          <strong>Chrome Web Store Compliance:</strong> All permissions declared in the Extension's <code style="font-size:12px;background:#e8f5e9;padding:1px 6px;border-radius:3px;">manifest.json</code> are the minimum necessary to deliver the Extension's core functionality. No "broad host permissions" or sensitive permission categories are requested.
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Content Scripts -->
+    <div class="pp-section" id="s7">
+      <div class="section-header">
+        <div class="section-num">07</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Script Behaviour</div>
+          <h2 class="section-title">Content Scripts</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension injects a content script (<em>content.js</em>) and stylesheet (<em>styles.css</em>) into web pages you visit. The sole purpose of this script is to <strong>display the spiritual verse overlay</strong> when the background service worker determines that a verse should be shown.</p>
+        <p>The content script operates as follows:</p>
+        <ul class="check-list">
+          <li><span class="ico">⏱️</span><div class="txt"><strong>Waits 5–7 seconds</strong><span>After page load, the script waits a randomised delay before contacting the background service worker — ensuring the overlay does not interrupt your initial page interaction.</span></div></li>
+          <li><span class="ico">📨</span><div class="txt"><strong>Requests permission to show</strong><span>The script sends a message to the background service worker asking whether a verse should be displayed. The background script applies its dual-lock gate to ensure only one tab per session receives a verse.</span></div></li>
+          <li><span class="ico">🖼️</span><div class="txt"><strong>Renders the overlay</strong><span>If permitted, the script creates and appends a styled overlay element to the page's DOM, displaying the verse text. The overlay is set to <code style="background:#f5e6d3;padding:1px 6px;border-radius:4px;font-size:12px;">pointer-events: none</code>, meaning it never intercepts your clicks.</span></div></li>
+          <li><span class="ico">🗑️</span><div class="txt"><strong>Self-removes after 10–20 seconds</strong><span>The overlay fades out automatically and is removed entirely from the DOM. No trace is left on the page.</span></div></li>
+        </ul>
+        <div class="info-box">
+          <strong>The content script does not:</strong> read page content, intercept keystrokes, monitor form inputs, access cookies on visited sites, or communicate with any external server. It only creates and removes a visual element.
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Third-Party Services -->
+    <div class="pp-section" id="s8">
+      <div class="section-header">
+        <div class="section-num">08</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">External Dependencies</div>
+          <h2 class="section-title">Third-Party Services</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension's core functionality operates entirely offline and does not communicate with any external server or third-party service during normal use.</p>
+        <p>The following external resources are referenced only in the Extension's user-facing web pages (such as the popup UI) and are not used within the Extension's runtime behaviour:</p>
+        <ul class="check-list">
+          <li><span class="ico">🔤</span><div class="txt"><strong>Google Fonts (Cinzel, Poppins, Outfit)</strong><span>Loaded in the popup HTML for visual typography. These are standard font requests. Google's font service may log the request IP as per Google's own privacy policy, but no personal data from the Extension is transmitted.</span></div></li>
+          <li><span class="ico">🛒</span><div class="txt"><strong>Gumroad (amanxr.gumroad.com)</strong><span>A link in the popup UI to a support page. This link only activates if you explicitly click it. We have no data-sharing arrangement with Gumroad.</span></div></li>
+        </ul>
+        <p>The Extension does not integrate any analytics SDK (such as Google Analytics, Mixpanel, or Amplitude), advertising network, crash reporting service, or A/B testing framework.</p>
+      </div>
+    </div>
+
+    <!-- 9. Data Sharing -->
+    <div class="pp-section" id="s9">
+      <div class="section-header">
+        <div class="section-num">09</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">No Sharing Policy</div>
+          <h2 class="section-title">Data Sharing &amp; Disclosure</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>We <strong>do not sell, rent, trade, license, or share</strong> any data — personal or otherwise — with any third party, under any circumstance. This includes but is not limited to:</p>
+        <ul class="check-list">
+          <li><span class="ico">🚫</span><div class="txt"><strong>Advertising Networks</strong><span>We have no relationships with any advertising or data brokerage companies. No user data is used for targeting, profiling, or remarketing purposes.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Analytics Providers</strong><span>We do not share usage data with analytics platforms. No behavioural data is collected to share.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Government or Legal Requests</strong><span>Because we collect no personal data, we have nothing to disclose even in the event of a legal request. We cannot produce data we do not have.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Business Transfers</strong><span>In the unlikely event of a change of ownership or acquisition, no user data would be transferred because none is held.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 10. Data Retention -->
+    <div class="pp-section" id="s10">
+      <div class="section-header">
+        <div class="section-num">10</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Storage Lifecycle</div>
+          <h2 class="section-title">Data Retention</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Because all data is stored locally on your device, you have full control over its lifecycle:</p>
+        <ul class="check-list">
+          <li><span class="ico">🔄</span><div class="txt"><strong>Session Storage</strong><span>Automatically cleared every time you close and restart your browser. No action required on your part.</span></div></li>
+          <li><span class="ico">⚙️</span><div class="txt"><strong>Local Preferences</strong><span>Persists until you uninstall the Extension or manually clear Extension data via <code style="background:#f5e6d3;padding:1px 6px;border-radius:4px;font-size:12px;">chrome://extensions/</code> → Details → Clear Data.</span></div></li>
+          <li><span class="ico">🗑️</span><div class="txt"><strong>Uninstalling the Extension</strong><span>Removes all locally stored data associated with the Extension permanently and immediately.</span></div></li>
+        </ul>
+        <p>We do not retain any data on our end. There are no servers to delete data from.</p>
+      </div>
+    </div>
+
+    <!-- 11. Children -->
+    <div class="pp-section" id="s11">
+      <div class="section-header">
+        <div class="section-num">11</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Child Safety</div>
+          <h2 class="section-title">Children's Privacy</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The Extension is suitable for users of all ages. The content it displays — verses from Hindu scriptures — is spiritual and educational in nature and contains no age-inappropriate material.</p>
+        <p>In compliance with the Children's Online Privacy Protection Act (COPPA) and equivalent global regulations, we do not knowingly collect any personal information from any person, including children under the age of 13.</p>
+        <p>Since no personal data of any kind is collected by the Extension, children are afforded the same complete privacy protection as all other users. Parents and guardians can install this Extension with confidence that no data about their children is being gathered.</p>
+        <p>If you believe any personal information relating to a minor has been submitted through our support channels, please contact us immediately and we will take appropriate corrective action.</p>
+      </div>
+    </div>
+
+    <!-- 12. Security -->
+    <div class="pp-section" id="s12">
+      <div class="section-header">
+        <div class="section-num">12</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Data Safety</div>
+          <h2 class="section-title">Security</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>The most effective data security measure is not collecting data in the first place — and that is the approach this Extension takes.</p>
+        <p>Where data does exist (the local session flag and preferences), security is provided by Chrome's built-in storage isolation. Chrome's extension storage APIs are sandboxed by design — no website, no other extension, and no external party can read data stored by this Extension without explicit programmatic access granted by the Extension itself.</p>
+        <div class="highlight-card">
+          <div class="highlight-card-title">Security Architecture Summary</div>
+          <p>All operation is local. No network transmission means no interception risk. Chrome's Manifest v3 service worker model enforces strict Content Security Policies, prevents inline script injection, and limits the Extension's network access to only explicitly declared URLs. The Extension declares no external host permissions.</p>
+        </div>
+        <p style="margin-top:16px;">The verse data (messages.json) is bundled within the Extension package itself and is loaded via <code style="background:#f5e6d3;padding:2px 8px;border-radius:4px;font-size:12px;">chrome.runtime.getURL()</code> — a secure, internal browser mechanism that does not make external network requests.</p>
+      </div>
+    </div>
+
+    <!-- 13. Your Rights -->
+    <div class="pp-section" id="s13">
+      <div class="section-header">
+        <div class="section-num">13</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">User Rights</div>
+          <h2 class="section-title">Your Rights &amp; Controls</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>Under data protection frameworks including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and India's Digital Personal Data Protection Act (DPDPA), you have rights over your personal data. Since we collect no personal data, most of these rights are satisfied by default — but here is how each applies:</p>
+        <ul class="check-list">
+          <li><span class="ico">👁️</span><div class="txt"><strong>Right to Access</strong><span>There is no personal data held by us to provide. The only data that exists is on your own device, accessible to you directly through Chrome's extension storage.</span></div></li>
+          <li><span class="ico">✏️</span><div class="txt"><strong>Right to Rectification</strong><span>No personal data is stored that would require correction.</span></div></li>
+          <li><span class="ico">🗑️</span><div class="txt"><strong>Right to Erasure ("Right to be Forgotten")</strong><span>You can erase all locally stored Extension data at any time by uninstalling the Extension or using Chrome's built-in "Clear Data" option.</span></div></li>
+          <li><span class="ico">🚫</span><div class="txt"><strong>Right to Object / Opt Out</strong><span>There is no data processing to object to. The Extension does not profile, target, or process personal data in any automated way.</span></div></li>
+          <li><span class="ico">📦</span><div class="txt"><strong>Right to Data Portability</strong><span>No personal data is held to export. Your device's local storage is inherently under your control.</span></div></li>
+        </ul>
+        <p>If you wish to exercise any right, or if you have questions about how data protection law applies to this Extension in your jurisdiction, please contact us using the details in Section 16.</p>
+      </div>
+    </div>
+
+    <!-- 14. Policy Updates -->
+    <div class="pp-section" id="s14">
+      <div class="section-header">
+        <div class="section-num">14</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Changes to This Document</div>
+          <h2 class="section-title">Policy Updates</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>We may revise this Privacy Policy from time to time to reflect changes in the Extension's functionality, applicable law, or our practices. When we do, we will:</p>
+        <ul class="check-list">
+          <li><span class="ico">📅</span><div class="txt"><strong>Update the Effective Date</strong><span>The date at the top of this document and in the hero section will be updated to reflect when the policy was last changed.</span></div></li>
+          <li><span class="ico">🔔</span><div class="txt"><strong>Publish via Chrome Web Store</strong><span>The updated policy link will be maintained on our Chrome Web Store listing page, which is the primary channel through which users discover the Extension.</span></div></li>
+          <li><span class="ico">📄</span><div class="txt"><strong>Maintain Version History</strong><span>Major changes will be noted in the Extension's changelog to give you visibility into what changed and why.</span></div></li>
+        </ul>
+        <p>Your continued use of the Extension after a policy update constitutes your acceptance of the revised policy. If you do not agree with the updated policy, please uninstall the Extension.</p>
+        <div class="info-box">
+          We will <strong>never</strong> make changes that introduce data collection, third-party sharing, or advertising without clearly disclosing this in both the policy and the Extension's Chrome Web Store listing, and providing you the opportunity to review before the change takes effect.
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. Compliance -->
+    <div class="pp-section" id="s15">
+      <div class="section-header">
+        <div class="section-num">15</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Standards &amp; Guidelines</div>
+          <h2 class="section-title">Compliance</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>This Extension and this Privacy Policy are designed to comply fully with:</p>
+        <ul class="check-list">
+          <li><span class="ico">🏪</span><div class="txt"><strong>Chrome Web Store Developer Programme Policies</strong><span>Including the minimum permissions requirement, the prohibition on deceptive data collection, and the requirement to accurately disclose all data use in a prominent privacy policy.</span></div></li>
+          <li><span class="ico">🇪🇺</span><div class="txt"><strong>GDPR (General Data Protection Regulation)</strong><span>EU/EEA users' rights are fully respected. No lawful basis for personal data processing is required because no personal data is processed.</span></div></li>
+          <li><span class="ico">🇺🇸</span><div class="txt"><strong>CCPA (California Consumer Privacy Act)</strong><span>California residents' rights to know, delete, and opt-out of sale are satisfied. No personal information is collected or sold.</span></div></li>
+          <li><span class="ico">🇮🇳</span><div class="txt"><strong>DPDPA (Digital Personal Data Protection Act, India)</strong><span>No personal data of Indian residents is collected, processed, or stored by this Extension.</span></div></li>
+          <li><span class="ico">👶</span><div class="txt"><strong>COPPA (Children's Online Privacy Protection Act)</strong><span>No personal information is collected from any user, including children under 13.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 16. Contact -->
+    <div class="pp-section" id="s16">
+      <div class="section-header">
+        <div class="section-num">16</div>
+        <div class="section-title-wrap">
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+      </div>
+      <div class="section-body">
+        <p>If you have questions, concerns, or feedback about this Privacy Policy or about how the Extension handles data, we encourage you to reach out. We are committed to responding clearly and promptly.</p>
+        <div class="contact-card">
+          <div class="contact-icon">🕉️</div>
+          <div>
+            <div class="contact-title">Divine Wisdom — Developer Support</div>
+            <div class="contact-text">For privacy inquiries, data concerns, or general feedback about the Extension, please use the Chrome Web Store support channel or visit our creator page. We typically respond within 2–3 business days.</div>
+            <a class="contact-link" href="https://amanxr.gumroad.com" target="_blank">Visit Creator Page →</a>
+          </div>
+        </div>
+        <div class="info-box gold" style="margin-top:20px;">
+          <strong>For Chrome Web Store related issues:</strong> You may also report concerns directly to Google via the Chrome Web Store listing page using the "Report abuse" or "Contact support" options available on the Extension's store page.
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <span class="footer-om">ॐ</span>
+  <div class="footer-title">Divine Wisdom</div>
+  <div class="footer-sub">Privacy Policy · Effective April 10, 2026 · Version 1.0</div>
+  <p class="footer-note">This policy is written in plain English and maintained in good faith. We believe transparency is the foundation of trust, and trust is the foundation of any meaningful spiritual practice.</p>
+  <a class="footer-support" href="https://amanxr.gumroad.com" target="_blank">☕ Support the Project</a>
+</footer>
+
+<script>
+  // Particles
+  const container = document.getElementById('particles');
+  const colors = ['#ff9933','#d4af37','#ffd700','#e67e22','#ffcc66'];
+  for (let i = 0; i < 22; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 5 + 2;
+    p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${Math.random()*14+8}s;animation-delay:${Math.random()*12}s;`;
+    container.appendChild(p);
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.pp-section, .summary-banner').forEach(el => observer.observe(el));
+
+  // TOC active highlighting
+  const sections = document.querySelectorAll('.pp-section[id]');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  const tocObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => tocObserver.observe(s));
+</script>
+</body>
+</html>
