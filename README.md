@@ -4,7 +4,7 @@
 
 ![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Available-brightgreen?logo=google-chrome)
 ![Manifest Version](https://img.shields.io/badge/Manifest-v3-blue)
-![Version](https://img.shields.io/badge/Version-1.0-orange)
+![Version](https://img.shields.io/badge/Version-0.3-orange)
 ---
 
 ## 📖 Overview
