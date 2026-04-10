@@ -199,7 +199,7 @@ This extension collects **zero personal data**.
 - All storage is local and limited to the extension's own session flag
 - Content scripts only display the overlay — no page content is read or transmitted
 
-Full privacy policy: [DivineWisdom_PrivacyPolicy.docx](./DivineWisdom_PrivacyPolicy.docx)
+Full privacy policy: [DivineWisdom Privacy Policy](https://xraman-71.github.io/Divine-Wisdom/privacy-policy.html)
 
 ---
 
